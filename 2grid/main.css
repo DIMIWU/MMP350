@@ -1,0 +1,15 @@
+@import "layout.css";
+@import "nav.css";
+
+
+body{
+	text-align:center;
+}
+ul{
+	text-decoration: none;
+}
+
+
+img{
+	width: 90%;
+}
