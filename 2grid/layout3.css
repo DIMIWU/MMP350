@@ -1,0 +1,47 @@
+#container{
+	width: 100%;
+	max-width:1200px;
+	margin:0 auto;
+
+
+	display: grid;
+	grid-template-columns:2fr 1fr;
+
+
+	grid-template-areas:
+		"header menu"
+		"main login"
+		"main profile"
+		"main social";
+}
+
+
+
+#title{
+	grid-area:header;
+}
+
+
+#main{
+	grid-area:main;
+}
+
+
+#menu{
+	grid-area:menu;
+}
+
+
+#login{
+	grid-area:login;
+}
+
+
+#profile{
+	grid-area:profile;
+}
+
+
+#social{
+	grid-area:social;
+}
