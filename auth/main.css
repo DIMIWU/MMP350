@@ -1,0 +1,16 @@
+@import "layout1.css";
+
+@import "nav.css";
+
+/*
+body{
+	text-align:center;
+}*/
+ul{
+	text-decoration: none;
+}
+
+
+img{
+	width: 100%;
+}

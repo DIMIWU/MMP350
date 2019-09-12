@@ -1,0 +1,41 @@
+  
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 100px max-content max-content;
+	
+	column-gap: 1em;
+	row-gap: 0.5em;
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#menu {
+	grid-column: 1 / 2;
+}
+
+#login {
+	grid-column: 3 / span 1;
+	grid-row: 1;
+}
+
+#main {
+	grid-column: 2 / span 1;
+	grid-row: 2;
+}
+
+#profile {
+	grid-column: 3 / span 1;
+	grid-row: 2 / span 2;
+}	
+
+#social {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
