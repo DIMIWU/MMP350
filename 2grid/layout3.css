@@ -1,18 +1,24 @@
 #container{
-	width: 100%;
+	width: 90%;
 	max-width:1200px;
 	margin:0 auto;
 
 
+
 	display: grid;
-	grid-template-columns:2fr 1fr;
+	grid-template-columns:2fr 1fr 1fr;
 
 
 	grid-template-areas:
-		"header menu"
-		"main login"
-		"main profile"
-		"main social";
+		"header header login"
+		"main main follow"
+		"main main follow"
+		"subcontent subcontent stories"
+		"subcontent subcontent stories"
+		"copyright copyright copyright";
+
+	column-gap: 2em;
+	row-gap: 3em;
 }
 
 
@@ -27,8 +33,8 @@
 }
 
 
-#menu{
-	grid-area:menu;
+#OtherStories{
+	grid-area:stories;
 }
 
 
@@ -37,11 +43,15 @@
 }
 
 
-#profile{
-	grid-area:profile;
+#subcpntent{
+	grid-area:subcontent;
 }
 
 
-#social{
-	grid-area:social;
+#followus{
+	grid-area:follow;
+}
+
+#copyright{
+	grid-area: copyright;
 }

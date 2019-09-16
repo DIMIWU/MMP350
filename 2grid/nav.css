@@ -1,26 +1,36 @@
-nav{
-	display: inline-block;
+body nav{
+
+	text-align: center;
+    list-style-type: none;
+
 
 }
-nav a{
+body nav a{
+	font-size: 1.2em;
 	color: black;
 	text-decoration: none;
+	margin: 10px;
+	padding: 10px;
+	padding-top: 1em;
+
 }
 
-nav ul{
+body nav ul li{
+	display: inline;
+	margin: 1em;
+}
+body nav ul{
 	list-style: none;
-	background-color: lightblue;
-	margin:0px;
-	padding:0px;
+	text-align: center;
+	padding:2em;
 
 }
 
-nav li:hover{
-	color: blue;
-	background-color: pink;
-}
-a{
-	margin: 0px;
-	padding: 0px;
+body nav ul li a:hover{
+	color: #40c9c9;
 
+}
+
+body nav ul:hover{
+	background-color: lightyellow;
 }

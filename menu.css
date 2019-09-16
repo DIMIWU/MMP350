@@ -1,0 +1,36 @@
+body nav{
+
+	text-align: center;
+    list-style-type: none;
+
+
+}
+body nav a{
+	font-size: 1.2em;
+	color: black;
+	text-decoration: none;
+	margin: 10px;
+	padding: 10px;
+	padding:1em;
+
+}
+
+body nav ul li{
+	display: inline;
+	margin: 1em;
+}
+body nav ul{
+	list-style: none;
+	text-align: center;
+	padding:1.5em;
+
+}
+
+body nav ul li a:hover{
+	color: #40c9c9;
+
+}
+
+body nav ul:hover{
+	background-color: lightyellow;
+}
