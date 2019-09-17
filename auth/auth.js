@@ -33,7 +33,10 @@
 		// console.log(passwordInput.value);
 
 
-		message.textContent = emailInput.value + "has logged in :)";
+		// message.textContent = emailInput.value + "has logged in :)";
+
+
+		firebase.auth().signInWithEmailAndPassword(emailInput.value,passwordInput.value);
 
 
 

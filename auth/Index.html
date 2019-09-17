@@ -4,6 +4,34 @@
 	<meta charset="utf-8">
 	<title>auth</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+	    authDomain: "mmp-three-fifty.firebaseapp.com",
+	    databaseURL: "https://mmp-three-fifty.firebaseio.com",
+	    projectId: "mmp-three-fifty",
+	    storageBucket: "",
+	    messagingSenderId: "29267025222",
+	    appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+
+
 </head>
 <body>
 	<nav>		
@@ -11,6 +39,8 @@
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="../1breakdown/index.html">Breakdown</a></li>
 			<li><a href="index.html">Grid</a></li>
+			<li><a href="../auth/index.html">auth</a></li>
+
 		</ul>
 	</nav>
 

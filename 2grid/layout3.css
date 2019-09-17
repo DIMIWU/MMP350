@@ -12,8 +12,6 @@
 	grid-template-areas:
 		"header header login"
 		"main main follow"
-		"main main follow"
-		"subcontent subcontent stories"
 		"subcontent subcontent stories"
 		"copyright copyright copyright";
 
@@ -43,7 +41,7 @@
 }
 
 
-#subcpntent{
+#subcontent{
 	grid-area:subcontent;
 }
 
