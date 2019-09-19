@@ -18,6 +18,8 @@ loginButton.onclick = function(event) {
 
 const displayName = document.getElementById("user-name");
 
+//firebase.auth().currentUser.updateProfile({displayName: "Apple"});
+
 
 firebase.auth().onAuthStateChanged(function(user){
 //    console.log("user",yser.displayName);
@@ -32,6 +34,9 @@ firebase.auth().onAuthStateChanged(function(user){
     }
     
 });
+
+
+
 
 
 
