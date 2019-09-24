@@ -1,0 +1,55 @@
+#container{
+	width: 90%;
+	max-width:1200px;
+	margin:0 auto;
+
+
+
+	display: grid;
+	grid-template-columns:2fr 1fr 1fr;
+
+
+	grid-template-areas:
+		"header header login"
+		"main main follow"
+		"subcontent subcontent stories"
+		"copyright copyright copyright";
+
+	column-gap: 2em;
+	row-gap: 3em;
+}
+
+
+
+#title{
+	grid-area:header;
+}
+
+
+#main{
+	grid-area:main;
+}
+
+
+#OtherStories{
+	grid-area:stories;
+}
+
+
+#login, #user-info {
+	grid-area:login;
+}
+
+
+#subcontent{
+	grid-area:subcontent;
+}
+
+
+#followus{
+	grid-area:follow;
+}
+
+#copyright{
+	grid-area: copyright;
+}

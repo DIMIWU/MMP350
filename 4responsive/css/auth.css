@@ -1,0 +1,12 @@
+#user-info {
+    display: none;
+}
+
+
+.auth #user-info{
+    display: block;
+}
+
+.auth #login{
+    display: none
+}
