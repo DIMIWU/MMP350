@@ -1,6 +1,7 @@
-@import "layout3.css";
-@import "auth.css";
+@import "css/layout3.css";
+@import "css/auth.css";
 
+@import "css/menu.css";
 @import "../menu.css";
 
 /*

@@ -19,14 +19,6 @@
 	row-gap: 3em;
 }
 
-#create {
-    grid-template-areas:
-		"header header login"
-		"main main follow"
-		"subcontent subcontent stories"
-		"copyright copyright copyright";
-}
-
 
 
 #title{
