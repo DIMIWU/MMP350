@@ -20,11 +20,24 @@
 }
 
 #create {
+    
+    width: 90%;
+
+
+	margin:0 auto;
+
+
+
+	display: grid;
+	grid-template-columns:2fr 1fr 1fr;
+
     grid-template-areas:
-		"header header login"
-		"main main follow"
-		"subcontent subcontent stories"
-		"copyright copyright copyright";
+		"title title title"
+		"menu2 menu2 menu2"
+		"main main main";
+    
+    column-gap: 2em;
+	row-gap: 3em;
 }
 
 
@@ -60,4 +73,12 @@
 
 #copyright{
 	grid-area: copyright;
+}
+
+#title{
+    grid-area:title;   
+}
+
+#menu2{
+    grid-area:menu2;
 }

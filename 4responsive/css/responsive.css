@@ -1,0 +1,28 @@
+input, button{
+    font-size: 1em;
+    font-family: inherit;
+    border: none;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+input{
+    border-bottom: 1px solid black;
+}
+
+button{
+    background: lightblue;
+    border-radius: 1em;
+}
+
+#create-account{
+    display:flex;
+    justify-content: space-between;
+}
+
+#create-account input, #create-account button{
+    
+
+}
