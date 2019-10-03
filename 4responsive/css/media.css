@@ -1,9 +1,31 @@
 
+#title{
+    background: pink;
+}
+#main{
+    background: lightblue;
+}
 
+#menu2{
+    background:yellow;
+
+}
 
 
 
 @media(max-width:400px){
     
     
+    
+    
+}
+
+
+
+
+
+@media(min-width:400px) and (max-width:800px){
+    #create{
+        background: pink;
+    }
 }
