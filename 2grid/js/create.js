@@ -1,5 +1,5 @@
 const emailInput = document.getElementById("email");
-const usernameInput = Document.getElementById("username");
+const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const createButton = document.getElementById("create-button");
 const errorMessage = document.getElementById("error-message");

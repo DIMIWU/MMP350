@@ -1,0 +1,22 @@
+#menu ul{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+
+};
+
+
+#menu li{
+    list-style: none;
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+li #home{
+/*    flex-grow: 5;*/
+    
+}

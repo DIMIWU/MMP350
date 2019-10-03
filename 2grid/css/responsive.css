@@ -1,0 +1,97 @@
+#title { background: lightgray; }
+#main { background: pink; }
+#menu { background: lightgreen; }
+
+@media (max-width: 400px) {
+	#container {
+		grid-template-columns: 100%;
+	}
+	
+	#title {
+		grid-row: 1;	
+	}
+	
+	#menu {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	#main {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	
+	/* menu flex box */
+	#menu ul {
+		justify-content: space-evenly;	
+	}
+	#menu a {
+		font-size: 2em;	
+	}
+	#menu li {
+		flex-grow: initial;
+	}
+	
+	li#home {
+		flex-basis: auto;	
+	}
+	
+	/* create account  */
+	#create-account {
+		flex-wrap: wrap;
+	}
+	
+	#create-account input, #create-account button {
+		flex-basis: 100%;
+		margin: 0.5em;
+		font-size: 1.5em;
+	}
+}
+
+/* tablet */
+@media (min-width: 401px) and (max-width: 800px) {
+
+	#menu {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	#main {
+		grid-column: 2;
+		grid-row: 1 / span 2;
+	}
+	
+	/* menu */
+	#menu ul {
+		flex-direction: column;
+	}
+	
+	#menu li {
+		font-size: 1.5em;
+	}
+	
+	/* create accoun */
+	
+	#create-account {
+		flex-wrap: wrap;
+	}
+	
+	#create-account input {
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 30%;
+	}
+	
+	#create-account button {
+		width: 200px;
+		margin: 1em;
+	}
+}
+
+/* desktop view - add flex basis rule */
+
+
+
+
+
+

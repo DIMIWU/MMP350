@@ -1,4 +1,4 @@
-#container{
+#home-page #container{
 	width: 90%;
 	max-width:1200px;
 	margin:0 auto;
@@ -20,6 +20,30 @@
 }
 
 
+#create-page #container{
+	width: 90%;
+	max-width:1200px;
+	margin:0 auto;
+
+
+
+	display: grid;
+	grid-template-columns:100%;
+
+
+	grid-template-areas:
+		"menu2"
+        "header"
+		"main";
+
+	column-gap: 2em;
+	row-gap: 3em;
+}
+
+
+#menu{
+    grid-area:menu2;
+}
 
 #title{
 	grid-area:header;
@@ -53,3 +77,11 @@
 #copyright{
 	grid-area: copyright;
 }
+
+
+
+
+
+
+
+
