@@ -37,11 +37,11 @@
 	}
 	
 	/* create account  */
-	#create-account {
+	#create{
 		flex-wrap: wrap;
 	}
 	
-	#create-account input, #create-account button {
+	#create input, #create button {
 		flex-basis: 100%;
 		margin: 0.5em;
 		font-size: 1.5em;
@@ -72,17 +72,17 @@
 	
 	/* create accoun */
 	
-	#create-account {
+	#create {
 		flex-wrap: wrap;
 	}
 	
-	#create-account input {
+	#create input {
 		flex-grow: 1;
 		flex-shrink: 0;
 		flex-basis: 30%;
 	}
 	
-	#create-account button {
+	#create button {
 		width: 200px;
 		margin: 1em;
 	}
