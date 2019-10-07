@@ -9,16 +9,18 @@ input:focus, button:focus {
 }
 
 input {
-	border-bottom: 1px solid black;	
+	border-bottom: 2px solid black;	
+    margin-bottom: 1em;
 }
 
 button {
-	background: lightblue;
-	/*border-radius: 1em;*/
+	background: lightgrey;
+	border-radius: 2em;
+    width: 3.5em;
 }
 
 #create{
-	display: flex;
+	
 	justify-content: space-between;
 }
 

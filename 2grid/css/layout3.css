@@ -4,7 +4,7 @@
 	margin:0 auto;
 
 
-
+/*@media (min-width:300px){*/
 	display: grid;
 	grid-template-columns:2fr 1fr 1fr;
 
@@ -17,6 +17,31 @@
 
 	column-gap: 2em;
 	row-gap: 3em;
+/*
+    }
+    
+    
+@media (max-width:300px){
+	display: grid;
+	grid-template-columns:100%;
+
+
+	grid-template-areas:
+		"header" 
+        "login"
+		"main"
+        "subcontent"
+        "stories"
+        "follow"
+		"copyright";
+
+	column-gap: 2em;
+	row-gap: 3em;
+    }
+    
+*/
+    
+    
 }
 
 
