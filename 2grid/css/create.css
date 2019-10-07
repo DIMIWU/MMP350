@@ -14,7 +14,7 @@ input {
 
 button {
 	background: lightblue;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 }
 
 #create{
@@ -22,6 +22,6 @@ button {
 	justify-content: space-between;
 }
 
-#create input, #create button {
+/*#create input, #create button {
 	
-}
+}*/
