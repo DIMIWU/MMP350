@@ -1,223 +1,122 @@
+@media (min-width: 501px) and (max-width: 800px) {
+    #home-page #container {
 
-
-@media (max-width: 500px) {
-
-#home-page #container{
-	width: 90%;
-	max-width:1200px;
-	margin:0 auto;
-
-
-/*@media (min-width:300px){*/
-	display: grid;
-	grid-template-columns:2fr 1fr 1fr;
-
-
-
-	grid-template-areas:
-		"header header login"
-		"main main follow"
-		"subcontent subcontent stories"
-		"copyright copyright copyright";
-
-	column-gap: 2em;
-	row-gap: 3em;
-
-}
-
-
-#create-page #container{
-	width: 90%;
-	max-width:1200px;
-	margin:0 auto;
-
-
-
-	display: grid;
-	grid-template-columns:100%;
-
-
-	grid-template-areas:
-		"menu2"
-        "header"
-		"main";
-
-	column-gap: 2em;
-	row-gap: 3em;
-}
-
-
-#menu2{
-    grid-area:menu2;
-    display: flex;
-}
-
-#title{
-	grid-area:header;
-}
-
-
-#main{
-	grid-area:main;
-}
-
-
-#OtherStories{
-	grid-area:stories;
-}
-
-
-#login, #user-info {
-	grid-area:login;
-}
-
-
-#subcontent{
-	grid-area:subcontent;
-}
-
-
-#followus{
-	grid-area:follow;
-}
-
-#copyright{
-	grid-area: copyright;
-}
-
-
-
-
-
-
-
-
-	/* menu flex box */
-	#menu ul {
-		justify-content:center;
-        margin: 2em;
-	}
-	#menu a {
-		font-size: 2em;	
-	}
-	#menu li {
-		flex-grow: initial;
-	}
-	
-	li#home {
-		flex-basis: auto;	
-	}
-	
-	/* create account  */
-	#create{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "header header login" "main main follow" "subcontent subcontent stories" "copyright copyright copyright";
+        column-gap: 2em;
+        row-gap: 3em;
+    }
+    #create-page #container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "menu2" "header" "main";
+        column-gap: 2em;
+        row-gap: 3em;
+    }
+    #menu2 {
+        grid-area: menu2;
         display: flex;
-		flex-wrap: wrap;
-	}
-	
-	#create input, #create button {
-		flex-basis: 100%;
-		margin: 0.5em;
-		font-size: 1.5em;
-	}
-    
-}
-
-
-
-
-
-
-
-
-
-
-/* tablet */
-@media (min-width: 500px) and (max-width: 800px) {
-
-#home-page #container{
-	width: 90%;
-	max-width:1200px;
-	margin:0 auto;
-
-
-/*@media (min-width:300px){*/
-	display: grid;
-	grid-template-columns:100%;
-
-
-
-	grid-template-areas:
-		"header"
-		"login"
-		"main"
-		"subcontent"
-		"follow"
-		"stories"
-		"copyright";
-
-	column-gap: 2em;
-	row-gap: 3em;
-
-}
-
-
-#create-page #container{
-	width: 90%;
-	max-width:1200px;
-	margin:0 auto;
-
-
-
-	display: grid;
-	grid-template-columns:100%;
-
-
-	grid-template-areas:
-		"menu2"
-        "header"
-		"main";
-
-	column-gap: 2em;
-	row-gap: 3em;
-}
-
-	/* menu */
-	#menu2 ul {
-		flex-direction: column;
-	}
-	
-	#menu2 li {
-		font-size: 1.5em;
-	}
-	
-	/* create accoun */
-	
-	#create {
-        display: block;
-		flex-wrap: wrap;
-	}
-	
-	#create input {
-		flex-grow: 1;
-		flex-shrink: 0;
-		flex-basis: 30%;
-	}
-	
-	#create button {
-		width: 200px;
-		margin: 1em;
-	}
-    
-    #create_new_account{
-        color: deeppink;
-    
+    }
+    #title {
+        grid-area: header;
+    }
+    #main {
+        grid-area: main;
+    }
+    #OtherStories {
+        grid-area: stories;
+    }
+    #login,
+    #user-info {
+        grid-area: login;
+    }
+    #subcontent {
+        grid-area: subcontent;
+    }
+    #followus {
+        grid-area: follow;
+    }
+    #copyright {
+        grid-area: copyright;
+    }
+    /* menu flex box */
+    #menu ul {
+        justify-content: center;
+        margin: 2em;
+    }
+    #menu a {
+        font-size: 2em;
+    }
+    #menu li {
+        flex-grow: initial;
+    }
+    li#home {
+        flex-basis: auto;
+    }
+    /* create account  */
+    #create {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #create input,
+    #create button {
+        flex-basis: 100%;
+        margin: 0.5em;
+        font-size: 1.5em;
     }
 }
 
+
+/* tablet */
+
+@media (max-width: 500px) {
+    #home-page #container {
+ 
+        /*@media (min-width:300px){*/
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "login" "main" "subcontent" "follow" "stories" "copyright";
+        column-gap: 2em;
+        row-gap: 3em;
+    }
+    #create-page #container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "menu2" "header" "main";
+        column-gap: 2em;
+        row-gap: 3em;
+    }
+    /* menu */
+    #menu2 ul {
+        flex-direction: column;
+    }
+    #menu2 li {
+        font-size: 1.5em;
+    }
+    /* create accoun */
+    #create {
+        display: block;
+        flex-wrap: wrap;
+    }
+    #create input {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 30%;
+    }
+    #create button {
+        width: 200px;
+        margin: 1em;
+    }
+    #create_new_account {
+        color: deeppink;
+    }
+}
+
+
 /* desktop view - add flex basis rule */
-
-
-
-
-
-
