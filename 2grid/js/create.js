@@ -14,9 +14,27 @@ createButton.onclick = function(event) {
     promise.catch(function(error){
         errorMessage.textContent = error.message;
     });
-    promise.then(function(){
-        location.herf = "index.html";
+    
+//    promise.then(function(){
+//        location.herf = "index.html";
+//    });
+    
+    
+    promise.then(function(credential(){
+        createUser(credential.ueser.uid);
+    
+      });
+});
+
+fuction createUser(id){
+    const db = firebase.database();
+    const ref = db.ref("users").child(id);
+    const promise = red.update({
+        displaName: userInput.value
     });
-
-
+    
+    promise.then(funcyion(){
+                 location.herf ="index.html";
+    });
+    
 };
