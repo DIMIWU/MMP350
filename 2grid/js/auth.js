@@ -14,6 +14,7 @@ loginButton.onclick = function(event) {
 
 
 
+
 /* auth state */
 
 const displayName = document.getElementById("user-name");
@@ -26,7 +27,27 @@ firebase.auth().onAuthStateChanged(function(user){
     
     if(user){
         document.body.classList.add('auth');
-        displayName.textContent = "Welcome," + user.displayName;
+        
+        
+        const userRef = firebas.database().ref('users').child(user.uid);
+        userRef.on ('value',function(snapshot){
+            const userInfo = snapshot.val();
+            displayName.textContent = "Welcome," + userInfo.displayName;
+        
+        });
+    
+    
+    
+    
+        const profileButton = document.getElementById("edit-profile");
+        profileButton.onclick = function(){
+            location.herf = "profile.html?uid=" +user.uid
+            
+        };
+    
+    
+    
+    
     }
     else{
         document.body.classList.remove('auth');
