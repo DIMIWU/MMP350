@@ -32,7 +32,7 @@
 */
 	
 :root {
-	--main-hue: 140; 
+	--main-hue: 255; 
 	
 	--main-color: hsl(var(--main-hue), 50%, 50%);
 	--text-color: var(--main-color);
@@ -48,7 +48,7 @@
 	
 /* analogous color scheme */
 :root {
-	--main-hue: 240;
+	--main-hue: 000;
 	--offset: 30;
 
 	--main-color: hsl(var(--main-hue), 50%, 50%);
@@ -66,7 +66,7 @@
 	
 /* complementary */
 :root {
-	--main-hue: 240;
+	--main-hue: 120;
 	--complement-hue: calc(var(--main-hue) - 180);
 	
 	--main-color: hsl(var(--main-hue), 50%, 50%);

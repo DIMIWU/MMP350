@@ -22,8 +22,21 @@ button {
 #create ul{
 	
 	justify-content: space-between;
+   
+    
 }
 
+
+/* create account  */
+    #create {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #create button {
+        flex-basis: 100%;
+        margin: 0.5em;
+        font-size: 1.5em;
+    }
 /*#create input, #create button {
 	
 }*/

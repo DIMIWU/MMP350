@@ -8,7 +8,8 @@
 
 	grid-template-areas:
 		"header header login"
-		"main main follow"
+		"main main login"
+        "main main follow"
 		"subcontent subcontent stories"
 		"copyright copyright copyright";
 

@@ -29,7 +29,7 @@ firebase.auth().onAuthStateChanged(function(user){
         document.body.classList.add('auth');
         
         
-        const userRef = firebas.database().ref('users').child(user.uid);
+        const userRef = firebase.database().ref('users').child(user.uid);
         userRef.on ('value',function(snapshot){
             const userInfo = snapshot.val();
             displayName.textContent = "Welcome," + userInfo.displayName;
