@@ -8,5 +8,5 @@
 }
 
 .auth #login{
-    display: none
+    display: block;
 }
