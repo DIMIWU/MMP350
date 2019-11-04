@@ -24,43 +24,26 @@ a {
 
 
 
-/*
-	complementary color scheme (blue and orange)
-	main #1786FF
-	blue accents #3094FF #085AB3
-	orange accents #B37100 #FFAA17
-*/
 
-/*:root {
-	--main-color: #1786FF;
-	--complement: #FFAA17;
-	--accent-one: #3094FF;
-	--accent-two: #085AB3;
-}
-	*/
-/* 
-	color scheme 2
-	monochromatic purple
-*/
-	
+
+
+
+
 :root {
 	--main-color: #236a6e;
 	--complement: #62dce3;
 	--accent-one: #62dce3;
 	--accent-two: #174c4f;
 		
-	--text-color: var(--accent-two); /* black */
+	--text-color: var(--accent-two);
 }
-	
-/*
-	triadic color scheme
-	hue 240  - blue
-*/
 
 
 
 
-	
+
+
+
 :root {
 	--main-hue: 183; 
 	
@@ -75,56 +58,6 @@ a {
 		
 	--complement: var(--accent-two);
 }
-	
-
-
-
-
-
-/* analogous color scheme */
-/*:root {
-	--main-hue: 000;
-	--offset: 30;
-
-	--main-color: hsl(var(--main-hue), 50%, 50%);
-		
-	--accent-one-hue: calc(var(--main-hue) - var(--offset));
-	--accent-two-hue: calc(var(--main-hue) + var(--offset));
-	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
-	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
-	
-	--complement: var(--accent-two);
-	--button-dark: hsl(var(--accent-one-hue), 60%, 25%);
-	
-	--link-color: var(--main-color);
-
-}*/
-
-
-
-
-
-
-
-
-
-
-	
-/* complementary */
-/*:root {
-	--main-hue: 120;
-	--complement-hue: calc(var(--main-hue) - 180);
-	
-	--main-color: hsl(var(--main-hue), 50%, 50%);
-	--complement: hsl(var(--complement-hue), 50%, 50%);
-	--accent-one: hsl(var(--main-hue), 40%, 60%);
-	--accent-two: hsl(var(--complement-hue), 40%, 60%);
-		
-	--text-color: var(--main-color);
-	--link-color: var(--complement);
-}
-*/
-
 
 
 
@@ -141,28 +74,3 @@ a {
 	--link-color: var(--complement);
 }
 
-
-
-
-
-	
-/* monochromatic 
-/*:root {
-	--main-hue: 64;
-	--saturation: 60;
-	--lightness: 70;
-	
-	--main-color: hsl(var(--main-hue), 50%, 50%);
-		
-	--sat-percent: calc(var(--saturation) * 100%);
-	--accent-one: hsl(var(--main-hue), var(--sat-percent), 50%);
-		
-	--lit-percent: calc(var(--lightness) * 100%);
-	--accent-two: hsl(var(--main-hue), 50%, var(--lit-percent));
-		
-	--complement: var(--accent-one);
-	--text-color: var(--main-color);
-	--link-color: var(--accent-one);
-}
-*/
-	
