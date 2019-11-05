@@ -1,4 +1,4 @@
-onst posts = document.getElementById('posts');
+const posts = document.getElementById('posts');
 const postRef = firebase.database().ref('posts');
 
 

@@ -1,0 +1,42 @@
+/* 1st typographic hierarchy */
+:root {
+	--display-font: 'Merriweather', serif;
+	--text-font: 'Pacifico', cursive;
+	--link-font: var(--display-font);
+}
+	
+body {
+	font-family: var(--display-font);	
+}
+	
+a {
+	font-family: var(--link-font);
+}
+	
+.post {
+	background-color: var(--accent-one);
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+	
+.post .text {
+	font-family: var(--text-font);
+	font-size: 1.5em;
+	line-height: 1.4;
+}
+	
+.post .author {
+	display: inline-block;
+	margin-right: 0.25em;
+	color: var(--accent-two);
+	font-weight: 700;
+}
+	
+.post .date {
+	display: inline-block;
+}
+	
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
