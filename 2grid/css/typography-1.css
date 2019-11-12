@@ -1,10 +1,16 @@
 /* 1st typographic hierarchy */
 :root {
-	--display-font: 'Merriweather', serif;
-	--text-font: 'Pacifico', cursive;
+	--display-font:'Open Sans', sans-serif;
+	--text-font: 'Lobster', cursive;
 	--link-font: var(--display-font);
 }
-	
+
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Supermercado One', cursive;
+font-family: 'Lobster', cursive;
+	*/
 body {
 	font-family: var(--display-font);	
 }

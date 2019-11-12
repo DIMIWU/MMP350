@@ -2,12 +2,29 @@
 @import "../menu.css";
 
 /*GM introducation Website Stylesheets*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Supermercado+One&display=swap');
+
 @import "css/layout3.css";
+@import "css/color.css";
+@import "css/typography-1.css";
+@import "css/nav.css";
+
+
 @import "css/auth.css";
 @import "css/menu.css";
-@import "css/nav.css";
 @import "css/create.css";
+@import "css/profile.css";
+
+
+@import "css/publish.css";
+@import "css/posts.css";
+
 @import "css/responsive.css";
+
+img { width: 100%; }
+body { margin: 0; }
 
 
 

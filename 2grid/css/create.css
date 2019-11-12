@@ -14,8 +14,9 @@ input {
 }
 
 button {
-	background: lightgrey;
-	border-radius: 2em;
+	background: #4390d6;
+;
+	border-radius: 0.1em;
     width: 3.5em;
 }
 
