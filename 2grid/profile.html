@@ -10,6 +10,7 @@
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -21,7 +22,7 @@
 			authDomain: "mmp-three-fifty.firebaseapp.com",
 			databaseURL: "https://mmp-three-fifty.firebaseio.com",
 			projectId: "mmp-three-fifty",
-			storageBucket: "",
+			storageBucket: "mmp-three-fifty.appspot.com",
 			messagingSenderId: "29267025222",
 			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
 		};
@@ -59,8 +60,22 @@
 		</div>
 		
 		<div id="main">
+			<input id="profile-image">
 			<input id="profile-name" placeholder="Username">
 			<textarea id="bio" placeholder="Add your bio"></textarea>
+
+			<div id="add-image">
+			<p>Upload your user profile image:</p>
+
+			<input id="image-file" type ="file" accept = "image/png, image/gif, image/jpeg">
+
+			<button id="submit-imge"></button>
+				
+
+
+			</div>
+
+
 			<button id="update-profile">Update Profile</button>
 		</div>
 		

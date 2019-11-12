@@ -2,6 +2,7 @@ input, button {
 	font-size: 1em;
 	font-family: inherit;
 	border: none;
+    padding: 0.3em;
 }
 
 input:focus, button:focus {
@@ -11,13 +12,14 @@ input:focus, button:focus {
 input {
 	border-bottom: 2px solid black;	
     margin-bottom: 1em;
+    background: none;
 }
 
 button {
 	background: #4390d6;
 ;
 	border-radius: 0.1em;
-    width: 3.5em;
+    width: 5em;
 }
 
 #create ul{

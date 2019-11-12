@@ -58,6 +58,11 @@
     li#home {
         flex-basis: auto;
     }
+
+
+
+
+    
     
 }
 
@@ -65,7 +70,7 @@
 /* tablet */
 
 /*@media (max-width: 500px) */
-@media (min-width: 501px) and (max-width: 800px)
+@media (min-width: 501px) /*and (max-width: 800px)*/
 {
     #home-page #container {
  
@@ -110,7 +115,39 @@
     #create_new_account {
         color: deeppink;
     }
+
+
+
+  #posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .post {
+    display: flex;
+    flex-direction: column;
+    }
+
+
+
+
+
+
+
 }
 
 
 /* desktop view - add flex basis rule */
+
+
+
+
+
+
+
+
+
+
+
+
+

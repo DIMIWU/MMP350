@@ -1,8 +1,11 @@
 #write-post {
-	
+	display: flex;
+	flex-direction: column;
 }
 
 #post-text {
+	height: 10em;
+	font: 3em;
 	
 }
 

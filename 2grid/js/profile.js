@@ -20,3 +20,25 @@ updateButton.onclick = function() {
 		bio: bioInput.value
 	});
 };
+
+
+
+const imageButton = document.getElementById('submit-imge');
+imageButton.addEventListener('click',function(){
+
+	//get the file
+	const file = document.getElementById('image-file').files[0];
+
+	if (file) {
+		//upload the file
+		const storage = firebase.storage();
+		const user = firebase.auth().currentUser;
+		const ref = storage.ref('users').child(user.uid).child('profile-image');
+		const promise = ref.put(file);
+		
+		promise.then(function(image) {
+			console.log(image.ref.getDownloadURL());
+		});
+	}
+	
+});
