@@ -20,3 +20,31 @@ function publishPost() {
 	// push post to database
 	ref.push(post);
 }
+
+
+
+
+
+
+
+const imageButton = document.getElementById('submit-image');
+imageButton.addEventListener('click', function() {
+	// get the file
+	const file = document.getElementById('image-file').files[0];
+	if (file) {
+		// upload the file
+		const storage = firebase.storage();
+		const user = firebase.auth().currentUser;
+		const ref = storage.ref('users').child(user.uid).child('profile-image');
+		const promise = ref.put(file);
+		
+		promise.then(function(image) {
+			return image.ref.getDownloadURL();
+		}).then(function(url) {
+			userRef.update({ imageURL: url });
+			document.getElementById('profile-image').src = url;
+			document.getElementById('add-image').style.display = 'none';
+		});
+	}
+	
+});

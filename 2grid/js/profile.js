@@ -12,6 +12,11 @@ userRef.on('value', function(snapshot) {
 	if (userInfo.bio) {
 		bioInput.value = userInfo.bio;
 	}
+	
+	if (userInfo.imageURL) {
+		document.getElementById('profile-image').src = userInfo.imageURL;
+		document.getElementById('add-image').style.display = 'none';
+	}
 });
 
 updateButton.onclick = function() {
@@ -21,24 +26,35 @@ updateButton.onclick = function() {
 	});
 };
 
-
-
-const imageButton = document.getElementById('submit-imge');
-imageButton.addEventListener('click',function(){
-
-	//get the file
+const imageButton = document.getElementById('submit-image');
+imageButton.addEventListener('click', function() {
+	// get the file
 	const file = document.getElementById('image-file').files[0];
-
 	if (file) {
-		//upload the file
+		// upload the file
 		const storage = firebase.storage();
 		const user = firebase.auth().currentUser;
 		const ref = storage.ref('users').child(user.uid).child('profile-image');
 		const promise = ref.put(file);
 		
 		promise.then(function(image) {
-			console.log(image.ref.getDownloadURL());
+			return image.ref.getDownloadURL();
+		}).then(function(url) {
+			userRef.update({ imageURL: url });
+			document.getElementById('profile-image').src = url;
+			document.getElementById('add-image').style.display = 'none';
 		});
 	}
 	
 });
+
+
+
+
+
+
+
+
+
+
+

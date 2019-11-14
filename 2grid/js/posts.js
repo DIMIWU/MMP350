@@ -18,7 +18,7 @@ function createElement(_class, text) {
 function createPost(data) {
 	const post = createElement('post');
 	const text = createElement('text', data.text);
-	const author = createElement('author', 'by ' + users[data.uid]);
+	const author = createElement('author', 'by ' + users[data.uid].displayName);
 	
 	var d = new Date(data.date);
 	const date = createElement('date',(d.getMonth() + 1) + "." +  d.getDate() + "." + d.getFullYear());
@@ -26,9 +26,20 @@ function createPost(data) {
 //	posts.appendChild(post);
 	posts.insertBefore(post, posts.firstElementChild);
 	
+	/* adding user profile image */
+	const img = new Image();
+	if (users[data.uid].imageURL) {
+		img.src = users[data.uid].imageURL;
+	} else {
+		img.src = 'images/egg.jpg';
+	}
+	img.classList.add('profile-image');
+	
+	post.appendChild(img);
 	post.appendChild(text);
 	post.appendChild(author);
 	post.appendChild(date);
+	
 }
 
 
@@ -39,7 +50,7 @@ function createPost(data) {
 let userCount = 0;
 const users = {};
 firebase.database().ref('users').on('child_added', function(snapshot) {
-	users[snapshot.key] = snapshot.val().displayName;
+	users[snapshot.key] = snapshot.val();
 	userCount += 1;
 });
 
@@ -48,4 +59,12 @@ firebase.database().ref('users').once('value', function(snapshot) {
 		loadPosts();	
 	}
 });
+
+
+
+
+
+
+
+
 
