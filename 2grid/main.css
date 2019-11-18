@@ -3,8 +3,9 @@
 
 /*GM introducation Website Stylesheets*/
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Pacifico&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower&display=swap');
 
 @import "css/layout3.css";
 @import "css/color.css";
