@@ -1,13 +1,3 @@
-const posts = document.getElementById('posts');
-const postRef = firebase.database().ref('posts');
-
-
-function loadPosts() {
-	postRef.on('child_added', function(snapshot) {
-		createPost(snapshot.val());	   
-	});
-}
-
 function createElement(_class, text) {
 	const element = document.createElement('div');
 	element.classList.add(_class);
@@ -15,10 +5,14 @@ function createElement(_class, text) {
 	return element;
 }
 
-function createPost(data) {
+function createPost(data, user) {
 	const post = createElement('post');
 	const text = createElement('text', data.text);
-	const author = createElement('author', 'by ' + users[data.uid].displayName);
+	const author = createElement('author', 'by ');
+	const authorLink = document.createElement('a');
+	authorLink.href = 'user.html?uid=' + data.uid;
+	authorLink.textContent = user.displayName;
+	author.appendChild(authorLink);
 	
 	var d = new Date(data.date);
 	const date = createElement('date',(d.getMonth() + 1) + "." +  d.getDate() + "." + d.getFullYear());
@@ -28,8 +22,8 @@ function createPost(data) {
 	
 	/* adding user profile image */
 	const img = new Image();
-	if (users[data.uid].imageURL) {
-		img.src = users[data.uid].imageURL;
+	if (user.imageURL) {
+		img.src = user.imageURL;
 	} else {
 		img.src = 'images/egg.jpg';
 	}
@@ -41,25 +35,6 @@ function createPost(data) {
 	post.appendChild(date);
 	
 }
-
-
-
-
-
-/* get users */
-let userCount = 0;
-const users = {};
-firebase.database().ref('users').on('child_added', function(snapshot) {
-	users[snapshot.key] = snapshot.val();
-	userCount += 1;
-});
-
-firebase.database().ref('users').once('value', function(snapshot) {
-	if (userCount === snapshot.numChildren()) {
-		loadPosts();	
-	}
-});
-
 
 
 
