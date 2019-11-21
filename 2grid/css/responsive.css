@@ -1,10 +1,16 @@
-@media (max-width: 500px)
+@media (min-width: 500px)
 /*@media (min-width: 501px) and (max-width: 800px) */
 {
     #home-page #container {
 
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: "header header login" "main main follow" "subcontent subcontent stories" "copyright copyright copyright";
+        grid-template-areas: 
+            "header header login" 
+            "main main login" 
+            "main main follow"
+            "main main stories"
+            "subcontent subcontent " 
+            "copyright copyright copyright";
         column-gap: 2em;
         row-gap: 3em;
     }
@@ -14,7 +20,10 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-areas: "menu2" "header" "main";
+        grid-template-areas: 
+            "menu2" 
+            "header" 
+            "main";
         column-gap: 2em;
         row-gap: 3em;
     }
@@ -58,6 +67,16 @@
     li#home {
         flex-basis: auto;
     }
+    
+     #posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+    #edit-profile-image {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
 
 
 
@@ -70,14 +89,21 @@
 /* tablet */
 
 /*@media (max-width: 500px) */
-@media (min-width: 501px) /*and (max-width: 800px)*/
+@media (max-width: 501px) /*and (max-width: 800px)*/
 {
     #home-page #container {
  
         /*@media (min-width:300px){*/
         display: grid;
         grid-template-columns: 100%;
-        grid-template-areas: "header" "login" "main" "subcontent" "follow" "stories" "copyright";
+        grid-template-areas: 
+            "header" 
+            "login" 
+            "main" 
+            "subcontent" 
+            "follow" 
+            "stories" 
+            "copyright";
         column-gap: 2em;
         row-gap: 3em;
     }
@@ -87,13 +113,16 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-areas: "menu2" "header" "main";
+        grid-template-areas: 
+            "menu2" 
+            "header" 
+            "main";
         column-gap: 2em;
         row-gap: 3em;
     }
     /* menu */
     #menu2 ul {
-        flex-direction: column;
+/*        flex-direction: column;*/
     }
     #menu2 li {
         font-size: 1.5em;
@@ -118,18 +147,25 @@
 
 
 
-  #posts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    }
+ 
     .post {
     display: flex;
     flex-direction: column;
     }
 
 
-
+    #edit-profile-image  {
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+        
+    }
+    
+    
+    
+    #user-info-detail ul{
+        display: flex;
+    }
 
 
 

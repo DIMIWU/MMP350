@@ -1,6 +1,10 @@
+#menu{
+    text-align: center;
+}
 #menu2 ul{
-    display:flex;
-    margin: 0;
+    display:inline-flex;
+    text-align: center;
+    margin: 10;
     padding: 0;
     
     justify-content: space-around;
