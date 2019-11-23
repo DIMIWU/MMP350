@@ -10,7 +10,6 @@
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -22,7 +21,7 @@
 			authDomain: "mmp-three-fifty.firebaseapp.com",
 			databaseURL: "https://mmp-three-fifty.firebaseio.com",
 			projectId: "mmp-three-fifty",
-			storageBucket: "mmp-three-fifty.appspot.com",
+			storageBucket: "",
 			messagingSenderId: "29267025222",
 			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
 		};
@@ -36,13 +35,12 @@
 		<div id="title">
 			<h1>MMP 350 Web App</h1>
 		</div>
-		
-		<div id="menu2">
+		<div id="menu">
 			<ul>
-				<li id="menu_space"><a href="index.html">Home</a></li>
-				<li id="menu_space"><a href="profile.html">Profile</a></li>
-				<li id="menu_space"><a href="users.html">Users</a></li>
-				<li id="menu_space"><a href="support">Support</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="profile">Profile</a></li>
+				<li><a href="users">Users</a></li>
+				<li><a href="support">Support</a></li>
 			</ul>
 		</div>
 		
@@ -60,29 +58,14 @@
 		</div>
 		
 		<div id="main">
-			<input id="profile-image">
-			<input id="profile-name" placeholder="Username">
-			<textarea id="bio" placeholder="Add your bio"></textarea>
-
-			<div id="add-image">
-			<p>Upload your user profile image:</p>
-
-			<input id="image-file" type ="file" accept = "image/png, image/gif, image/jpeg">
-
-			<button id="submit-imge">Submit</button>
-				
-
-
-			</div>
-
-
-			<button id="update-profile">Update Profile</button>
+			<div id="posts"></div>
 		</div>
 		
 		<div id="profile">
-			<img src="1.jpg" alt="">
+			<img id="edit-profile-image" src="cat.jpg" alt="">
 			<button id="edit-profile">Edit Profile</button>
 		</div>
+		
 		
 		<div id="social">
 			<ul>
@@ -95,7 +78,9 @@
 	</div>
 	
 	<script src="js/auth.js"></script>
-	<script src="js/profile.js"></script>
+	<script src="js/posts.js"></script>
+	<script src="js/user.js"></script>
+	
 </body>
 </html>
 

@@ -14,10 +14,16 @@
 };
 
 
-#menu2 li{
+#menu2 ul{
     list-style: none;
     flex-grow: 1;
     flex-basis: 150px;
+    margin-right: 1em;
+}
+
+#menu_space{
+    margin: 1em;
+    
 }
 
 li #home{
