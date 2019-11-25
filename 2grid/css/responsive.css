@@ -14,16 +14,16 @@
         column-gap: 2em;
         row-gap: 3em;
     }
-    #create-page #container {
+    #create-page #container #profile-page #user-page #users-page{
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 100%;
         grid-template-areas: 
-            "menu2" 
-            "header" 
-            "main";
+            "menu2 login" 
+            "header login" 
+            "main login";
         column-gap: 2em;
         row-gap: 3em;
     }
@@ -40,8 +40,7 @@
     #OtherStories {
         grid-area: stories;
     }
-    #login,
-    #user-info {
+    #login, #user-info, {
         grid-area: login;
     }
     #subcontent {
