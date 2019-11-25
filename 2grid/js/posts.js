@@ -1,23 +1,56 @@
-/* database query */
-const posts = document.getElementById('posts');
-const postRef = firebase.database().ref('posts');
-
-function loadPosts() {
-	postRef.on('child_added', function(snapshot) {
-		createPost(snapshot.val(), users[snapshot.val().uid], snapshot.key);
-	});
+	
+function createElement(_class, text) {
+	const element = document.createElement('div');
+	element.classList.add(_class);
+	element.textContent = text;
+	return element;
 }
 
-/* get users */
-let userCount = 0;
-const users = {};
-firebase.database().ref('users').on('child_added', function(snapshot) {
-	users[snapshot.key] = snapshot.val();
-	userCount += 1;
-});
-
-firebase.database().ref('users').once('value', function(snapshot) {
-	if (userCount === snapshot.numChildren()) {
-		loadPosts();	
+function createPost(postData, userData, postId) {
+	const post = createElement('post'); // container element
+	const text = createElement('text', postData.text);
+	const author = createElement('author', 'by ');
+	const authorLink = document.createElement('a');
+	authorLink.href = 'user.html?uid=' + postData.uid;
+	authorLink.textContent = userData.displayName;
+	author.appendChild(authorLink);
+	
+	var d = new Date(postData.date);
+	const date = createElement('date',(d.getMonth() + 1) + "." +  d.getDate() + "." + d.getFullYear());
+	
+//	posts.appendChild(post);
+	posts.insertBefore(post, posts.firstElementChild);
+	
+	/* adding user profile image */
+	const img = new Image();
+	if (userData.imageURL) {
+		img.src = userData.imageURL;
+	} else {
+		img.src = 'images/egg.jpg';
 	}
-});
+	img.classList.add('profile-image');
+	
+	/* link to the post - permanent link */
+	const postLink = document.createElement('a');
+	postLink.href = 'post.html?id=' + postId;
+	postLink.textContent = "Permalink";
+	
+	post.appendChild(img);
+	post.appendChild(text);
+	post.appendChild(author);
+	post.appendChild(date);
+	post.appendChild(postLink);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

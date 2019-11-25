@@ -7,6 +7,7 @@ const userRef = firebase.database().ref('users').child(uid);
 userRef.on('value', function(snapshot) {
 	const userInfo = snapshot.val();
 	postRef.on('child_added', function(snapshot) {
-		createPost(snapshot.val(), userInfo);  
+		createPost(snapshot.val(), userInfo, snapshot.key);  
 	});
 });
+

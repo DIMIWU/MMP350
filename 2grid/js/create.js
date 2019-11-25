@@ -26,3 +26,8 @@ function createUser(uid) {
         location.href = "index.html";
     });
 }
+
+
+
+
+
