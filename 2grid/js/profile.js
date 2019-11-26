@@ -3,6 +3,9 @@ const userRef = firebase.database().ref('users').child(uid);
 
 const profileName = document.getElementById('profile-name');
 const bioInput = document.getElementById('bio');
+const firstName = document.getElementById('profile_firstname');
+const lastName = document.getElementById('profile_lastname');
+const website = document.getElementById('profile_website');
 const updateButton = document.getElementById('update-profile');
 
 userRef.on('value', function(snapshot) {
@@ -12,9 +15,20 @@ userRef.on('value', function(snapshot) {
 	if (userInfo.bio) {
 		bioInput.value = userInfo.bio;
 	}
+    
+    if (userInfo.profile_firstname) {
+		firstName.value = userInfo.profile_firstname;
+	}
+    if (userInfo.profile_lastname) {
+		lastName.value = userInfo.profile_lastname;
+	}
+    if (userInfo.profile_website) {
+		website.value = userInfo.profile_website;
+	}
+    
 	
 	if (userInfo.imageURL) {
-		document.getElementById('profile-image').src = userInfo.imageURL;
+		document.getElementById('edit-profile-image').src = userInfo.imageURL;
 		document.getElementById('add-image').style.display = 'none';
 	}
 });
@@ -22,7 +36,10 @@ userRef.on('value', function(snapshot) {
 updateButton.onclick = function() {
 	userRef.update({
 		displayName: profileName.value,
-		bio: bioInput.value
+		bio: bioInput.value,
+        profile_firstname: firstName.value,
+        profile_lastname: lastName.value,
+        profile_website: website.value
 	});
 };
 

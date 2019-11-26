@@ -6,7 +6,10 @@ function createElement(_class, text) {
 	return element;
 }
 
-function createPost(postData, userData, postId) {
+function createPost(postData, _userData, postId) {
+    
+    const userData = _userData || {};
+    
 	const post = createElement('post'); // container element
 	const text = createElement('text', postData.text);
 	const author = createElement('author', 'by ');
@@ -26,7 +29,7 @@ function createPost(postData, userData, postId) {
 	if (userData.imageURL) {
 		img.src = userData.imageURL;
 	} else {
-		img.src = 'images/egg.jpg';
+		img.src = 'images/cat.jpg';
 	}
 	img.classList.add('profile-image');
 	
