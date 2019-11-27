@@ -31,7 +31,7 @@
 //		firebase.analytics();
 	</script>
 </head>
-<body id="users-page">
+<body id="pages">
 	<div id="container">
 		<div id="title">
 			<h1>MMP 350 Web App</h1>
@@ -39,7 +39,6 @@
 		<div id="menu2">
 			<ul>
 				<li id="menu_space"><a href="index.html">Home</a></li>
-				<li id="menu_space"><a href="profile.html">Profile</a></li>
 				<li id="menu_space"><a href="users.html">Users</a></li>
 				<li id="menu_space"><a href="support.html">Support</a></li>
 			</ul>
@@ -50,22 +49,52 @@
 			<input id="password" placeholder="Password" type="password">
 			<button id="login-button">Login</button>
 			<p id="login-message"></p>
-			<p><a href="create.html">Create new account</a></p>
-		</div>
-		
-		<div id="user-info">
-			<p id="user-name"></p>
-			<button id="logout-button">Logout</button>
-		</div>
+			<p id="create_new_account"><a href="create.html">Create new account</a></p>
+            
+        </div>
+        
+        <div id="user-info">
+           <ul id="user-info-detail"> 
+               <li><img id="edit-profile-image" src="" alt=""></li> 
+                <li><p id="user-name"></p></li>
+            </ul>
+
+            <button id="logout-button">Log out</button>
+            <button id="edit-profile" href="profile.html">Edit Profile</button>
+        </div>
+
 		
 		<div id="main">
 			<div id="users"></div>
 		</div>
 		
-		<div id="profile">
-			<img id="edit-profile-image" src="images/1.jpg" alt="">
-			<button id="edit-profile">Edit Profile</button>
-		</div>
+<!--
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
 		
 		
 		<div id="social">

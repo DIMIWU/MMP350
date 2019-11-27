@@ -1,12 +1,27 @@
 #user-info {
-    display: none;
+	display: none;
 }
 
-
-.auth #user-info{
-    display: block;
+#profile {
+	display: none;
 }
 
-.auth #login{
-    display: none;
+.auth #user-info {
+	display: block;
+}
+
+.auth #profile {
+	display: block;
+}
+
+.auth #login {
+	display: none;
+}
+
+#write-post {
+	display: none;
+}
+
+.auth #write-post {
+	display: block;
 }

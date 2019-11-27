@@ -46,3 +46,32 @@ a {
 	content: " on ";
 	color: var(--main-color);
 }
+    
+    
+.user {
+	background-color: var(--accent-one);
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+	
+.user .text {
+	font-family: var(--text-font);
+	font-size: 1.5em;
+	line-height: 1.4;
+}
+	
+.user .author {
+	display: inline-block;
+	margin-right: 0.25em;
+	color: var(--accent-two);
+	font-weight: 700;
+}
+	
+.user .date {
+	display: inline-block;
+}
+	
+.user .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
