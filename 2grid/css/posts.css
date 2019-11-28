@@ -2,7 +2,12 @@
 	grid-gap: 1em;
 	text-align: left;
 }
-
+/*
+.post img{
+ max-height: 100px;
+    
+}
+*/
 .post {
 	
 	background-color: var(calc((--link-color)-100);
