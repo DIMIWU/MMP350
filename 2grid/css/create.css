@@ -16,17 +16,12 @@ input {
 }
 
 button {
-	background: #4390d6;
-
 	border-radius: 0.1em;
     
 }
 
-#create ul{
-	
+#create ul{	
 	justify-content: space-between;
-   
-    
 }
 
 

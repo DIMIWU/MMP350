@@ -6,7 +6,7 @@
 	color: var(--main-color);
 }
 
-#menu {
+#menu2 {
 	background-color: var(--accent-one);
 }
 
@@ -46,29 +46,29 @@ a {
 
 /*
 :root {
-	--main-hue: 165; 
-	--main-color: hsl(var(--main-hue), 100%, 0%);
+	--main-hue: 0; 
+	--main-color: hsl(var(--main-hue), 100%, 24%);
 	--text-color: var(--main-color);
 		
-	--accent-one-hue: calc(var(--main-hue) - 140);
-	--accent-two-hue: calc(var(--main-hue) - 110);
+	--accent-one-hue: calc(var(--main-hue) - 120);
+	--accent-two-hue: calc(var(--main-hue) + 120);
 	
-	--accent-one: hsl(var(--accent-one-hue), 100%, 86%);
+	--accent-one: hsl(var(--accent-one-hue), 100%, 95%);
 	--accent-two: hsl(var(--accent-two-hue), 100%, 95%);
 		
-	--complement: var(--accent-two);
+	--complement: hsl(var(--accent-one), 100%, 30%);
 }
 */
 
 /*complementary color scheme */
 :root {
-	--main-hue: 46;
-	--complement-hue: calc(var(--main-hue) - 15);
+	--main-hue: 170;
+	--complement-hue:calc(var(--main-hue) - 180);
 	
-	--main-color: hsl(var(--main-hue), 90%, 50%);
-	--complement: hsl(var(--complement-hue), 100%, 90%);
-	--accent-one: hsl(var(--main-hue), 90%, 90%);
-	--accent-two: hsl(var(--complement-hue), 90%, 80%);
+	--main-color: hsl(var(--main-hue), 50%, 20%);
+	--complement: hsl(var(--complement-hue), 50%, 50%);
+	--accent-one: hsl(var(--main-hue), 50%, 90%);
+	--accent-two: hsl(var(--complement-hue), 90%, 95%);
 		
 	--text-color: var(--main-color);
 	--link-color: var(--main-color);
