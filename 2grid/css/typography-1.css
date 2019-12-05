@@ -13,11 +13,23 @@ font-family: 'Lobster', cursive;
 	*/
 body {
 	font-family: var(--display-font);	
+    
 }
 	
 a {
 	font-family: var(--link-font);
+/*    font-size:4vw;*/
 }
+    
+/*
+h1{
+    font-size: 10vw;
+    }
+    
+    h3{
+    font-size: 6vw;
+    }
+*/
 	
 .post {
 	background-color: var(--accent-one);

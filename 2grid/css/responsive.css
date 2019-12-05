@@ -83,6 +83,11 @@
         border: 1px solid black;
         border-radius: 50%;
     }
+    
+    body {
+		font-size: 18px;
+		
+	}
 
 
 
@@ -181,6 +186,10 @@
     
     
     }
+    body {
+		font-size: 14px;
+		
+	}
 
 }
 
