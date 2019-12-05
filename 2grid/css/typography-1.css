@@ -46,7 +46,7 @@ h1{
 .post .author {
 	display: inline-block;
 	margin-right: 0.25em;
-	color: var(--accent-two);
+/*	color: var(--accent-two);*/
 	font-weight: 700;
 }
 	
