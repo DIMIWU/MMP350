@@ -1,0 +1,14 @@
+#write-post {
+	display: flex;
+	flex-direction: column;
+}
+
+#post-text {
+	height: 10em;
+	fonts: 3em;
+	
+}
+
+#publish {
+	
+}

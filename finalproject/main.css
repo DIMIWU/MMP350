@@ -1,0 +1,114 @@
+/*MMP350 Website Navgation Stylesheet*/
+@import "../menu.css";
+
+/*GM introducation Website Stylesheets*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower&display=swap');
+
+@import "css/layout3.css";
+@import "css/color.css";
+@import "css/typography-1.css";
+@import "css/nav.css";
+
+
+@import "css/auth.css";
+@import "css/menu.css";
+@import "css/create.css";
+@import "css/profile.css";
+
+
+@import "css/publish.css";
+@import "css/posts.css";
+/*@import "css/post.css";*/
+
+@import "css/responsive.css";
+
+img { width: 100%; }
+body { margin: 0; }
+
+
+
+
+/*
+body{
+	text-align:center;
+}*/
+*{
+    margin:0;
+    padding:0;
+}
+
+
+h1{
+	font-size: 2.5em;
+
+}
+a{
+	color: black;
+	text-decoration: none;
+
+
+}
+
+
+
+ul{
+	
+	
+}
+
+li{
+	list-style-type: none;
+	padding: 1em;
+
+}
+
+
+
+img{
+	width: 100%;
+}
+
+
+#menu a{
+	list-style: none;
+	color: black;
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+#menu li:hover{
+	background-color: #e8fffa;
+
+}
+
+#copyright{
+	padding-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

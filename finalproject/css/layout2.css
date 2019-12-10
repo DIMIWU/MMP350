@@ -1,0 +1,92 @@
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	/*grid-template-rows: 100px max-content max-content;*/
+	grid-template-rows: :1fr 1fr 2fr 3fr 1fr;
+	
+	column-gap: 2em;
+	row-gap: 3em;
+}
+
+#title {
+	grid-column:1 /span 3;
+	grid-row: 1/ span 1;
+}
+
+
+#login, #user-info{
+	grid-column: 1/ span 1;
+	grid-row: 2/ span 1;
+
+
+}
+
+#OtherStories {
+	grid-column: 1 / span 1;
+	grid-row: 3/ span 1;
+}
+#main {
+	grid-column: 2 / span 2;
+	grid-row: 2/ span 2;
+}
+
+#subcontent {
+	grid-column: 2 / span 2;
+	grid-row: 4 / span 1;
+}	
+
+#followus {
+	grid-column: 1 / span 1;
+	grid-row: 4/ span 1;
+}
+#copyright{
+	grid-column: 1/ span 3;
+	grid-row:5;
+
+
+
+
+
+
+
+}/*#container {
+	width:800px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 0.5em;
+}
+
+#title {
+	grid-column: 2 / span 1;	
+}
+
+#menu {
+	grid-column: 1 / span 1;
+	grid-row: 2;
+}
+
+#login {
+	grid-column: 1 / span 1;
+	grid-row: 1;
+}
+
+#main {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 3;
+}
+
+#profile {
+	grid-column: 1 / span 1;
+}
+
+#social {
+	grid-column: 1 / span 1;
+}*/
+
+
+

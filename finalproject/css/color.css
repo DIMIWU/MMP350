@@ -1,0 +1,76 @@
+* {
+	color: var(--text-color);
+}
+
+#title h1 {
+	color: var(--main-color);
+}
+
+#menu2 {
+	background-color: var(--accent-one);
+}
+
+#login {
+	background-color: var(--accent-two);
+}
+
+button {
+	background-color: var(--complement);
+}
+
+a {
+	color: var(--link-color);
+}
+
+#social {
+	background-color: var(--complement);
+}
+/*#social {
+	background-color: var(--complement);
+}*/
+
+
+
+/*monochromatic*/
+/*:root {
+	--main-color: #032252;
+	--complement: #d1e3ff;
+	--accent-one: #7aadff;
+	--accent-two: #d6e6ff;	
+	--text-color: #000000;
+}*/
+
+
+
+/*triadic color scheme*/
+
+/*
+:root {
+	--main-hue: 0; 
+	--main-color: hsl(var(--main-hue), 100%, 24%);
+	--text-color: var(--main-color);
+		
+	--accent-one-hue: calc(var(--main-hue) - 120);
+	--accent-two-hue: calc(var(--main-hue) + 120);
+	
+	--accent-one: hsl(var(--accent-one-hue), 100%, 95%);
+	--accent-two: hsl(var(--accent-two-hue), 100%, 95%);
+		
+	--complement: hsl(var(--accent-one), 100%, 30%);
+}
+*/
+
+/*complementary color scheme */
+:root {
+	--main-hue: 170;
+	--complement-hue:calc(var(--main-hue) - 180);
+	
+	--main-color: hsl(var(--main-hue), 50%, 20%);
+	--complement: hsl(var(--complement-hue), 50%, 50%);
+	--accent-one: hsl(var(--main-hue), 50%, 90%);
+	--accent-two: hsl(var(--complement-hue), 90%, 95%);
+		
+	--text-color: var(--main-color);
+	--link-color: var(--main-color);
+}
+
