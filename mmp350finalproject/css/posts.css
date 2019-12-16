@@ -14,41 +14,51 @@
 
 .post {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 100px max-content max-content;
-	column-gap: 2em;
-	row-gap: 1em;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+		"postimage postimage"
+		"posttext posttext"
+		"profileimage author"
+		"profileimage date";
+
+        column-gap: 0.5em;
+	/*	row-gap: 1em;*/
 
 	
 	background-color: var(calc((--link-color)-100);
 	padding: 0.5em;
 }
 
-.post .post-image-file{
+.post-image-file{
+	grid-area:postimage;
+}
+.profile-image{
+	grid-area:profileimage;
 	
 
 }
-.post .profile-image{
-	
 
-}
-
-.post .text {
+.text {
 	background-color: var(--link-color);
 	color: var(--main-text);
 	text-align: left;
 	padding: 0.5em;
 	margin: 0.5em;
+	grid-area:posttext;
 }
 
-.post .author {
+.author {
+	grid-area:author;
+
 	font-size: 1em;
 	color: var(--bg-drk);
 	border: solid 2px #000;
 
 }
 
-.post .date {
+.date {
+	grid-area:date;
+
 	background-color: var(--bgDrk);
 	color: var(--link-color);
 	float: right;
