@@ -25,6 +25,10 @@ a {
 #social {
 	background-color: var(--complement);
 }
+
+#write-post{
+	background-color: var(--accent-one);
+}
 /*#social {
 	background-color: var(--complement);
 }*/

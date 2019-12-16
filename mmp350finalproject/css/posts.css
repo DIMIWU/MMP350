@@ -1,6 +1,9 @@
 #posts {
 	grid-gap: 1em;
 	text-align: left;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;    
 }
 /*
 .post img{
@@ -8,10 +11,26 @@
     
 }
 */
+
 .post {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 100px max-content max-content;
+	column-gap: 2em;
+	row-gap: 1em;
+
 	
 	background-color: var(calc((--link-color)-100);
 	padding: 0.5em;
+}
+
+.post .post-image-file{
+	
+
+}
+.post .profile-image{
+	
+
 }
 
 .post .text {
@@ -32,8 +51,10 @@
 .post .date {
 	background-color: var(--bgDrk);
 	color: var(--link-color);
+	float: right;
 	
 }
+
 
 /*Mobile*/
 /*

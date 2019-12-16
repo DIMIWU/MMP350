@@ -2,3 +2,31 @@
 	display: block;
 	font-size: 1em;
 }
+
+#user-info #edit-profile{
+	display: flex;
+/*	float: left;*/
+	text-align: center;
+	margin: auto auto 1em;
+}
+
+#user-info #logout-button{
+	display: flex;
+	text-align: center;
+	margin: auto;
+/*	float: right;*/
+}
+#edit-profile-image {
+	width: 150px;
+	border: 1px solid black;
+    border-radius: 50%;
+}
+
+#user-info #edit-profile li{
+	list-style-type: none;
+	padding: 1em;
+
+}
+#welcome{
+	padding:0;
+}

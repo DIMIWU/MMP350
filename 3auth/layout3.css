@@ -1,3 +1,77 @@
+/* Tablet */
+    #home-page #container {
+
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+            "header header" 
+            "maincontent login"
+            "subcontent follow"
+            "subcontent stories" 
+            "main main"
+            "copyright copyright";
+        column-gap: 2em;
+        row-gap: 3em;
+    }
+
+    #wirte-posts {
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);    */
+    padding-bottom: 2.5em;
+    }
+
+    body {
+        font-size: 1.5vw;
+        
+    }
+    h1{
+        font-size: 5vw;
+    }
+    #edit-profile-image  {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 50%;
+        
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0.2em;
+        font-size: 1vw;
+    }
+    
+
+    #title {
+        grid-area: header;
+    }
+  
+    #main-content{
+        grid-area:maincontent;
+    }
+    #main {
+        grid-area: main;
+    }
+    #OtherStories {
+        grid-area: stories;
+    }
+    #login, #user-info, {
+        grid-area: login;
+    }
+    #subcontent {
+        grid-area: subcontent;
+    }
+    #followus {
+        grid-area: follow;
+    }
+    #copyright {
+        grid-area: copyright;
+    }
+
+}
+
+
+
+/*
 #container{
 	width: 100%;
 	max-width:1200px;
@@ -14,10 +88,10 @@
 		"main profile"
 		"main social";
 }
+*/
 
 
-
-#title{
+/*#title{
 	grid-area:header;
 }
 
@@ -44,4 +118,4 @@
 
 #social{
 	grid-area:social;
-}
+}*/

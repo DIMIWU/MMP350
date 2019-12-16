@@ -4,8 +4,9 @@
 }
 
 #post-text {
-	height:10em;
-	font-size:3em;
+	width:-webkit-fill-available;
+	height:8em;
+	font-size:2vw;
 	
 }
 

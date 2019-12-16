@@ -22,7 +22,9 @@ firebase.auth().onAuthStateChanged(function(user) {
         const userRef = firebase.database().ref('users').child(user.uid);
         userRef.on('value', function(snapshot) {
             const userInfo = snapshot.val();
-            displayName.textContent = "Welcome, " + userInfo.displayName;
+            // displayName.textContent = "Welcome!" + userInfo.displayName;
+            // displayName.textContent = "Welcome!";
+            displayName.textContent = userInfo.displayName
             
             if (userInfo.imageURL) {
                 document.getElementById('edit-profile-image').src = userInfo.imageURL;

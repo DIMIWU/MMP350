@@ -7,15 +7,15 @@
 
 
 	grid-template-areas:
-		"header header login"
-		"main main login"
-        "main main follow"
-		"subcontent subcontent stories"
-		"post post post"
-		"copyright copyright copyright";
+		"header header header" 
+        "maincontent maincontent login"
+        "maincontent maincontent follow"
+        "subcontent subcontent stories" 
+        "main main main"
+        "copyright copyright copyright";
 
 	column-gap: 2em;
-	row-gap: 3em;
+	row-gap: 0.3em;
 
     
 }
@@ -41,50 +41,51 @@
 	row-gap: 3em;
 }
 
+    #title {
+        grid-area: header;
+    }
+  
+    #main-content{
+        grid-area:maincontent;
+    }
+    #main {
+        grid-area: main;
+    }
+    #OtherStories {
+        grid-area: stories;
+    }
+    #login, #user-info, {
+        grid-area: login;
+    }
+    #subcontent {
+        grid-area: subcontent;
+    }
+    #followus {
+        grid-area: follow;
+    }
+    #copyright {
+        grid-area: copyright;
+    }
 
-#menu{
-    grid-area:menu2;
+/*#home-page #contaner{
+    width: 90%;
+    max-width:1024px;
+    margin:0 auto;
 }
 
-#title{
-	grid-area:header;
+#create-page #container{
+    width: 90%;
+    max-width:1200px;
+    margin:0 auto;
+}*/
+
+#shop, #publish{
+    float: right;
 }
 
-
-#main{
-	grid-area:main;
-}
-
-
-#OtherStories{
-	grid-area:stories;
-}
-
-
-#login, #user-info {
-	grid-area:login;
-}
-
-
-#subcontent{
-	grid-area:subcontent;
-}
-
-
-#followus{
-	grid-area:follow;
-}
-
-#copyright{
-	grid-area: copyright;
-}
 #write-post{
-	grid-area: post;
+    padding:1em 1em 2.5em 1em;
 }
-
-
-
-
 
 
 
