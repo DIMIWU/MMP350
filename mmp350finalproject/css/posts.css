@@ -32,6 +32,7 @@
 .post {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
+    
 /*	grid-template-areas:
 		"postimage postimage"
 		"posttext posttext"
@@ -42,7 +43,7 @@
 	/*	row-gap: 1em;*/
 
 	
-	background-color: var(calc((--link-color)-100);
+	background-color: var(calc((--link-color)-100));
 	padding: 0.5em;
 }
 
@@ -56,16 +57,17 @@
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row: 3/5;
+   
 	
 
 }
 
 .text {
-	background-color: var(--link-color);
+	background-color: var(--accent-two);
 	color: var(--main-text);
 	text-align: left;
-	padding: 0.5em;
-	margin: 0.5em;
+	padding: 0.5em 0.5em 0.5em 0.2em;
+	margin:0.5em 0 0.5em 0;
 	/*grid-area:posttext;*/
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -79,8 +81,10 @@
 	grid-row: 3/4;
 
 	font-size: 1em;
+/*
 	color: var(--bg-drk);
 	border: solid 2px #000;
+*/
 
 }
 
@@ -94,6 +98,13 @@
 	color: var(--link-color);
 	float: right;
 	
+}
+
+.permalink {
+    display: none;
+     grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 5/6; 
 }
 
 
