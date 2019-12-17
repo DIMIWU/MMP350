@@ -1,4 +1,21 @@
+#user-page #posts {
+	grid-gap: 1em;
+	text-align: left;
+	display: grid;
+    grid-template-columns: 100%;
+    width: 100%;    
+}
+
 #posts {
+	grid-gap: 1em;
+	text-align: left;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;    
+}
+
+
+#users {
 	grid-gap: 1em;
 	text-align: left;
 	display: grid;
@@ -14,12 +31,12 @@
 
 .post {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-template-areas:
+	grid-template-columns: repeat(2,1fr);
+/*	grid-template-areas:
 		"postimage postimage"
 		"posttext posttext"
 		"profileimage author"
-		"profileimage date";
+		"profileimage date";*/
 
         column-gap: 0.5em;
 	/*	row-gap: 1em;*/
@@ -30,10 +47,15 @@
 }
 
 .post-image-file{
-	grid-area:postimage;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 1/2;
 }
 .profile-image{
-	grid-area:profileimage;
+	/*grid-area:profileimage;*/
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row: 3/5;
 	
 
 }
@@ -44,11 +66,17 @@
 	text-align: left;
 	padding: 0.5em;
 	margin: 0.5em;
-	grid-area:posttext;
+	/*grid-area:posttext;*/
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 2/3;
 }
 
 .author {
-	grid-area:author;
+	/*grid-area:author;*/
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 3/4;
 
 	font-size: 1em;
 	color: var(--bg-drk);
@@ -57,7 +85,10 @@
 }
 
 .date {
-	grid-area:date;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 4/5;
+	/*grid-area:date;*/
 
 	background-color: var(--bgDrk);
 	color: var(--link-color);

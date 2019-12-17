@@ -6,16 +6,21 @@
 	color: var(--main-color);
 }
 
+h3{
+	color: var(--complement);
+}
+
 #menu2 {
 	background-color: var(--accent-one);
 }
 
 #login {
-	background-color: var(--accent-two);
+	background-color: var(--accent-one);
 }
 
 button {
-	background-color: var(--complement);
+	background-color: var(--accent-two);
+	outline:1px solid var(--main-color);
 }
 
 a {
@@ -29,40 +34,19 @@ a {
 #write-post{
 	background-color: var(--accent-one);
 }
-/*#social {
-	background-color: var(--complement);
-}*/
+.post .date::before {
 
-
-
-/*monochromatic*/
-/*:root {
-	--main-color: #032252;
-	--complement: #d1e3ff;
-	--accent-one: #7aadff;
-	--accent-two: #d6e6ff;	
-	--text-color: #000000;
-}*/
-
-
-
-/*triadic color scheme*/
-
-/*
-:root {
-	--main-hue: 0; 
-	--main-color: hsl(var(--main-hue), 100%, 24%);
-	--text-color: var(--main-color);
-		
-	--accent-one-hue: calc(var(--main-hue) - 120);
-	--accent-two-hue: calc(var(--main-hue) + 120);
-	
-	--accent-one: hsl(var(--accent-one-hue), 100%, 95%);
-	--accent-two: hsl(var(--accent-two-hue), 100%, 95%);
-		
-	--complement: hsl(var(--accent-one), 100%, 30%);
+	color: var(--main-color);
 }
-*/
+.post{
+	background-color: var(--accent-one);
+	
+}
+.user{
+	padding: 1em auto 1em;
+	background-color: var(--accent-one);
+	
+}
 
 /*complementary color scheme */
 :root {
@@ -75,6 +59,6 @@ a {
 	--accent-two: hsl(var(--complement-hue), 90%, 95%);
 		
 	--text-color: var(--main-color);
-	--link-color: var(--main-color);
+	--link-color: var(--complement);
 }
 

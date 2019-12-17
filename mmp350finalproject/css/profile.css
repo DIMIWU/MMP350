@@ -13,7 +13,7 @@
 #user-info #logout-button{
 	display: flex;
 	text-align: center;
-	margin: auto;
+	margin: auto auto 1em;
 /*	float: right;*/
 }
 #edit-profile-image {
@@ -30,3 +30,5 @@
 #welcome{
 	padding:0;
 }
+
+

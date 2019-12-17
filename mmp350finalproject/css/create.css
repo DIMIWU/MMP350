@@ -10,7 +10,7 @@ input:focus, button:focus {
 
 input {
     font-size: 2vw;
-    width: 90%;
+  /*  width: 100%;*/
     border-bottom: 1px solid black; 
     margin-bottom: 1em;
     background: none;
@@ -34,6 +34,7 @@ button {
         flex-wrap: wrap;
     }
     #create button {
+        /*float: right;*/
         flex-basis: 100%;
         margin: 0.5em;
         font-size: 1.5em;

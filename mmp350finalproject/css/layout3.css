@@ -20,6 +20,57 @@
     
 }
 
+#pages #container{
+    width: 90%;
+    max-width:1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas:
+        "header  header" 
+        "login login"
+        "follow stories"
+        "main main"
+        "copyright copyright";
+
+    column-gap: 2em;
+    row-gap: 0.3em;
+
+}
+
+#user-page #container{
+    width: 90%;
+    max-width:1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas:
+        "header  header" 
+        "login login"
+        "main main"
+        "follow stories"
+        "copyright copyright";
+
+    column-gap: 2em;
+    row-gap: 0.3em;
+
+}
+#user-page #posts {
+    grid-gap: 1em;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;    
+}
+
+
+#login{
+    margin: auto;
+}
+
+ #user-info{
+       margin: auto;
+   }
 
 #create-page #container{
 	width: 90%;
@@ -33,7 +84,6 @@
 
 
 	grid-template-areas:
-		"menu2"
         "header"
 		"main";
 
@@ -86,6 +136,7 @@
 #write-post{
     padding:1em 1em 2.5em 1em;
 }
+
 
 
 
