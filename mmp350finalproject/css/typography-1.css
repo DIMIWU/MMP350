@@ -36,7 +36,7 @@ h1{
 	
 .post {
 	background-color: var(--accent-one);
-	margin: 0.5em 0;
+	margin: 0.5em;
 	padding: 0.5em;
 }
 	
@@ -64,7 +64,7 @@ h1{
     
 .user {
 	background-color: var(--accent-one);
-	margin: 0.5em 0;
+	margin: 0.1em;
 	padding: 0.5em;
 }
 	

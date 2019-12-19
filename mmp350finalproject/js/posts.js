@@ -48,6 +48,7 @@ function createPost(postData, _userData, postId) {
 	
 	/* link to the post - permanent link */
 	const postLink = document.createElement('a');
+    postLink.classList.add('permalink');
 	postLink.href = 'post.html?id=' + postId;
 	postLink.textContent = "Permalink";
 	
