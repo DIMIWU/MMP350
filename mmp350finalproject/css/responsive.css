@@ -110,6 +110,10 @@
         margin-bottom: 1em;
         background: none;
     }
+    
+    .text {
+    min-height: 200px;
+    }
 }
 
 
@@ -271,5 +275,9 @@
     }
     h1{
     text-align: center;
+    }
+    
+    .text {
+    min-height: 80px;
     }
 }
