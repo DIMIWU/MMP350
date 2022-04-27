@@ -18,9 +18,13 @@ h3{
 	background-color: var(--accent-one);
 }
 
+input {
+ border: none;   
+}
+
 button {
 	background-color: var(--accent-two);
-	outline:1px solid var(--main-color);
+	border:1px solid var(--main-color);
 }
 
 a {

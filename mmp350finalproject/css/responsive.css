@@ -1,53 +1,43 @@
-
 /*Desktop*/
-/*@media screen and (min-width: 1024px) {*/
-@media (min-width: 1024px)
-{
-    #home-page #container {
 
+
+@media (min-width: 2000px) {
+    #title h1 {
+        font-size: 100px;
+    }
+}
+
+/*@media screen and (min-width: 1024px) {*/
+
+@media (min-width: 1024px) {
+    #home-page #container {
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: 
-            "header header header" 
-            "maincontent maincontent login"
-            "maincontent maincontent follow"
-            "subcontent subcontent  stories" 
-            "main main main"
-            "copyright copyright copyright";
+        grid-template-areas: "header header header" "maincontent maincontent login" "maincontent maincontent follow" "subcontent subcontent  stories" "main main main" "copyright copyright copyright";
         column-gap: 2em;
         row-gap: 0.3em;
     }
-    
     #users {
-    grid-gap: 1em;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;    
+        grid-gap: 1em;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
     }
-
-    #pages #container{
-    width: 90%;
-    max-width:1200px;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns:2fr 1fr 1fr;
-    grid-template-areas:
-        "header header header" 
-        "login follow stories"
-        "main main main"
-        "copyright copyright copyright";
-
-    column-gap: 2em;
-    row-gap: 0.3em;
-
+    #pages #container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "header header header" "login follow stories" "main main main" "copyright copyright copyright";
+        column-gap: 2em;
+        row-gap: 0.3em;
     }
-
     #title {
         grid-area: header;
     }
-  
-    #main-content{
-        grid-area:maincontent;
+    #main-content {
+        grid-area: maincontent;
     }
     #main {
         grid-area: main;
@@ -55,7 +45,9 @@
     #OtherStories {
         grid-area: stories;
     }
-    #login, #user-info, {
+    #login,
+    #user-info,
+    {
         grid-area: login;
     }
     #subcontent {
@@ -67,77 +59,66 @@
     #copyright {
         grid-area: copyright;
     }
-
-
     /* menu flex box */
     #menu2 {
         display: flex;
     }
-
     li#home {
         flex-basis: auto;
     }
-    
     #posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     #users {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1em;
-    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
     }
-    
     #edit-profile-image {
         border: 1px solid black;
         border-radius: 50%;
     }
-    
     body {
-		font-size: 1.5vw;
-		
-	}
-    h1{
-        font-size: 5vw;
-
+        font-size: 1.5vw;
     }
-    #edit-profile-image  {
+    h1 {
+        font-size: 5vw;
+    }
+    #edit-profile-image {
         width: 200px;
         border: 1px solid black;
         border-radius: 50%;
-        
     }
-    button{
+    button {
         display: flex;
         justify-content: center;
         text-align: center;
         padding: 0.5em;
         font-size: 0.5vw;
     }
-    input, button {
-    font-size: 1.5vw;
-    font-family: inherit;
-    border: none;
-    padding: 0.3em;
+    input,
+    button {
+        font-size: 1.5vw;
+        font-family: inherit;
+/*        border: none;*/
+        padding: 0.3em;
     }
     input {
-    width: 90%;
-    border-bottom: 1.5px solid black; 
-    margin-bottom: 1em;
-    background: none;
-}
-
-
+        width: 90%;
+        border-bottom: 1.5px solid black;
+        margin-bottom: 1em;
+        background: none;
+    }
     
+    .text {
+    min-height: 200px;
+    }
 }
 
 
+/* Tablet */
 
-
-/* Tablet *//*
-@media screen and (min-width: 415px) {*/
 /*@media (max-width:1023) and (min-width:415px)
 {
     #home-page #container {
@@ -184,62 +165,36 @@
 }*/
 
 
-
-
-
-
 /* Mobile */
-@media (max-width: 414px)
-{
+
+@media (max-width: 414px) {
     #home-page #container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-areas: 
-            "header" 
-            "login"
-            "maincontent"
-            "subcontent"
-            "main"
-            "follow"
-            "stories"
-            "copyright";
+        grid-template-areas: "header" "login" "maincontent" "subcontent" "main" "follow" "stories" "copyright";
         column-gap: 2em;
         row-gap: 0.5em;
     }
-
-
-
     #pages #container {
-    width: 90%;
-    max-width:414px;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-areas:
-        "header" 
-        "login"
-        "follow"
-        "stories"
-        "main"
-        "copyright";
-
-    column-gap: 2em;
-    row-gap: 0.3em;
-
+        width: 90%;
+        max-width: 414px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "header" "login" "follow" "stories" "main" "copyright";
+        column-gap: 2em;
+        row-gap: 0.3em;
     }
-
     #users {
-    grid-gap: 0.2em;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 100%;
-    width: 100%;    
+        grid-gap: 0.2em;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
     }
-
-
     /* menu */
     #menu2 ul {
-/*        flex-direction: column;*/
+        /*        flex-direction: column;*/
     }
     #menu2 li {
         font-size: 1.5em;
@@ -258,102 +213,71 @@
         width: 100%;
         margin: 0;
     }
-
     #posts {
-    display: grid;
-    grid-template-columns: 100%;
-    
+        display: grid;
+        grid-template-columns: 100%;
     }
     .post {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-
-    
-    #user-info-detail ul{
+    #user-info-detail ul {
         display: flex;
     }
-
-
     #users {
-    display: grid;
-    grid-template-columns: repeat 1fr;
-    
-    
+        display: grid;
+        grid-template-columns: repeat 1fr;
     }
     body {
-		font-size: 3vw;
-		
-	}
-
-
-    #login{
-       width: 100%;
-       margin: auto;
-       padding-top: 10px;     
-
+        font-size: 3vw;
     }
-
-    #user-info{
-       margin: auto;
-       padding: auto;
-
+    #login {
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
     }
-
-    #login input{
+    #user-info {
+        margin: auto;
+        padding: auto;
+    }
+    #login input {
         width: 48%;
     }
-
-    #email{
+    #email {
         float: left;
     }
-
-    #password{
+    #password {
         float: right;
     }
-
-    #edit-profile-image  {
+    #edit-profile-image {
         width: 150px;
         border: 1px solid black;
         border-radius: 50%;
-        
     }
-
-
-    button{
+    button {
         display: flex;
         justify-content: center;
         text-align: center;
-     /*   padding: 0.2em;*/
+        /*   padding: 0.2em;*/
         font-size: 3vw;
     }
-
-    #login-button{
+    #login-button {
         width: 50%;
         float: left;
     }
-
-    #create_new_account{
+    #create_new_account {
         width: 50%;
         float: right;
-
     }
-    #menu2{
+    #menu2 {
+        text-align: center;
+        margin: 0.5em;
+    }
+    h1{
     text-align: center;
-    margin: 0.5em;
+    }
+    
+    .text {
+    min-height: 80px;
+    }
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
